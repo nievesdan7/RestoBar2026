@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CapaAD/CapaAD.csproj" Id="bc50b770-e3ac-41cb-826f-44251a455956" />
+  <Project Path="CapaRN/CapaRN.csproj" Id="cad2831a-8a27-4fca-8c92-066f19977687" />
+  <Project Path="RestoBar2026/RestoBar2026.csproj" Id="34c40a8d-ce63-4665-b76c-46fb206c9794" />
+</Solution>
