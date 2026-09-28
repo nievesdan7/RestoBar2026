@@ -256,6 +256,12 @@
     <EmbeddedResource Include="FRMPrincipal.resx">
       <DependentUpon>FRMPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMProveedorLista.resx">
+      <DependentUpon>FRMProveedorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMProveedorRegistrar.resx">
+      <DependentUpon>FRMProveedorRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

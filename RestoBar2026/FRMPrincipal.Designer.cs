@@ -101,7 +101,7 @@
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Size = new System.Drawing.Size(758, 160);
+            this.ribbonControl1.Size = new System.Drawing.Size(952, 160);
             this.ribbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonControl1.SystemText.MaximizeRibbonText = "&Maximize the Ribbon";
             this.ribbonControl1.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon";
@@ -131,7 +131,7 @@
             this.ribbonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 2);
-            this.ribbonPanel1.Size = new System.Drawing.Size(758, 98);
+            this.ribbonPanel1.Size = new System.Drawing.Size(952, 98);
             // 
             // 
             // 
@@ -513,10 +513,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblUsuario,
             this.lblFechaHora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 344);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 417);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(758, 34);
+            this.statusStrip1.Size = new System.Drawing.Size(952, 34);
             this.statusStrip1.TabIndex = 3;
             // 
             // lblUsuario
@@ -524,7 +524,7 @@
             this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Padding = new System.Windows.Forms.Padding(5);
-            this.lblUsuario.Size = new System.Drawing.Size(369, 29);
+            this.lblUsuario.Size = new System.Drawing.Size(466, 29);
             this.lblUsuario.Spring = true;
             this.lblUsuario.Text = " Usuario:";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,7 +534,7 @@
             this.lblFechaHora.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaHora.Name = "lblFechaHora";
             this.lblFechaHora.Padding = new System.Windows.Forms.Padding(5);
-            this.lblFechaHora.Size = new System.Drawing.Size(369, 29);
+            this.lblFechaHora.Size = new System.Drawing.Size(466, 29);
             this.lblFechaHora.Spring = true;
             this.lblFechaHora.Text = " Fecha y Hora:";
             this.lblFechaHora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -544,7 +544,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(758, 378);
+            this.ClientSize = new System.Drawing.Size(952, 451);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribbonControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

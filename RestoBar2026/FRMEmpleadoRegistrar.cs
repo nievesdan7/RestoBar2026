@@ -173,7 +173,7 @@ namespace RestoBar2026
         private void LBLAgregarPersona_Click(object sender, EventArgs e)
         {
             FRMPersonaBuscar a = new FRMPersonaBuscar();
-            a.condicion = "papscodper not in (select papscodper from aperson,emplea where papscodper=faelcodper order by papscodper)";
+            a.condicion = "papscodper not in (select papscodper from aperson,aemplea where papscodper=faelcodper order by papscodper)";
             a.ShowDialog();
             if (a.seleccionadoOK)
             {
