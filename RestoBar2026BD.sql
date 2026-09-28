@@ -1,5 +1,6 @@
 
 
+
 CREATE TABLE public.xnumcor (
     pxnctipcor VARCHAR(25) NOT NULL,
     cxncnumcor NUMERIC(9, 0),
@@ -72,7 +73,7 @@ CREATE TABLE aprovee
 	capvtelcon character varying(20),	
 	capvfeccre timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
 	capvfecmod timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-
+	
 	CONSTRAINT PK_aprovee PRIMARY KEY (papvcodpro),
 	CONSTRAINT FK_aprovee_aperson FOREIGN KEY (fapvcodper) 
 		REFERENCES aperson (papscodper) ON DELETE RESTRICT
@@ -82,18 +83,15 @@ CREATE TABLE aemplea
 (
 	paelcodemp character varying(25) NOT NULL,
 	faelcodper character varying(25) NOT NULL,	
-	caelcaremp character varying(50),
-	caeltipemp character varying(50),
+	caeltipemp character varying(50),	
 	caelfecing date NOT NULL,
 	caelfecsal date,
-	caelsalemp numeric(10,2) DEFAULT 0.00,
-	caeltipcon character varying(50),
-	caelestemp character varying(20) DEFAULT 'ACTIVO',
+	caelsalemp numeric(10,2) DEFAULT 0.00,	
+	caelestemp boolean DEFAULT true,
 	caelfeccre timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
 	caelfecmod timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-
-	CONSTRAINT PK_aempleado PRIMARY KEY (paelcodemp),
-	CONSTRAINT FK_aempleado_aperperson FOREIGN KEY (faelcodper) 
-		REFERENCES aperperson (pappcodper) ON DELETE RESTRICT,
-	CONSTRAINT UQ_aempleado_codfic UNIQUE (caelcodfic)
+	
+	CONSTRAINT PK_aemplea PRIMARY KEY (paelcodemp),
+	CONSTRAINT FK_aemplea_aperson FOREIGN KEY (faelcodper) 
+		REFERENCES aperson (papscodper) ON DELETE RESTRICT
 );

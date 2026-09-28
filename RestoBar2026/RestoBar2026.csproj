@@ -42,6 +42,7 @@
     <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
       <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.5.0.2, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=12.5.0.2, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.12, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.12\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -162,6 +163,36 @@
     <Compile Include="FRMCategoriaRegistrar.Designer.cs">
       <DependentUpon>FRMCategoriaRegistrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMEmpleadoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMEmpleadoLista.Designer.cs">
+      <DependentUpon>FRMEmpleadoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMEmpleadoRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMEmpleadoRegistrar.Designer.cs">
+      <DependentUpon>FRMEmpleadoRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPersonaBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPersonaBuscar.Designer.cs">
+      <DependentUpon>FRMPersonaBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPersonaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPersonaLista.Designer.cs">
+      <DependentUpon>FRMPersonaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPersonaRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPersonaRegistrar.Designer.cs">
+      <DependentUpon>FRMPersonaRegistrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMProductoLista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +204,18 @@
     </Compile>
     <Compile Include="FRMProductoRegistrar.Designer.cs">
       <DependentUpon>FRMProductoRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMProveedorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProveedorLista.Designer.cs">
+      <DependentUpon>FRMProveedorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMProveedorRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProveedorRegistrar.Designer.cs">
+      <DependentUpon>FRMProveedorRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="MetodosGenerales.cs" />
     <Compile Include="FRMPrincipal.cs">
@@ -188,6 +231,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoriaRegistrar.resx">
       <DependentUpon>FRMCategoriaRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMEmpleadoLista.resx">
+      <DependentUpon>FRMEmpleadoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMEmpleadoRegistrar.resx">
+      <DependentUpon>FRMEmpleadoRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPersonaBuscar.resx">
+      <DependentUpon>FRMPersonaBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPersonaLista.resx">
+      <DependentUpon>FRMPersonaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPersonaRegistrar.resx">
+      <DependentUpon>FRMPersonaRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProductoLista.resx">
       <DependentUpon>FRMProductoLista.cs</DependentUpon>
@@ -284,6 +342,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icBasurero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icEmpleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icProveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icAceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icPersona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icProducto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

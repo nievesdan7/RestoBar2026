@@ -17,7 +17,7 @@ namespace RestoBar2026
         private aproduc producto2 = new aproduc();
         private List<lproduc> lista_productos = new List<lproduc>();
         private string nombreMin = "Producto";
-        private string nombreMay = "Producto";
+        private string nombreMay = "PRODUCTO";
         #endregion
 
         #region Constructor
@@ -43,16 +43,10 @@ namespace RestoBar2026
             {
                 DTGLista.Rows.Add();
 
-                if (a.capdestpro)
+                if (!a.capdestpro)
                 {
-                    if (DTGLista.Rows.Count % 2 == 0)
-                    {
-                        DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.LightSkyBlue;
-                    }
-                }
-                else
-                {
-                    DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.Salmon;
+                    DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.OrangeRed;
+                    DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.ForeColor = Color.White;
                 }
 
                 DTGLista[0, DTGLista.Rows.Count - 1].Value = a.papdcodpro;

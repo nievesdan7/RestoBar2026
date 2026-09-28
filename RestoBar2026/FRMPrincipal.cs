@@ -43,5 +43,31 @@ namespace RestoBar2026
             a.Dock = DockStyle.Fill;
             a.Show();
         }
+
+        private void BTNEmpleados_Click(object sender, EventArgs e)
+        {
+            foreach (Form s in this.MdiChildren)
+            {
+                s.Close();
+            }
+            FRMEmpleadoLista a = new FRMEmpleadoLista();
+            a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
+            a.Show();
+        }
+
+        private void BTNPersonas_Click(object sender, EventArgs e)
+        {
+            foreach (Form s in this.MdiChildren)
+            {
+                s.Close();
+            }
+            FRMPersonaLista a = new FRMPersonaLista();
+            a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
+            a.Show();
+        }
+
+       
     }
 }

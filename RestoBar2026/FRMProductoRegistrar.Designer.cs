@@ -63,6 +63,7 @@
             this.BTNGrabar = new DevComponents.DotNetBar.ButtonX();
             this.SWBEstado = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.OFDElegirImagen = new System.Windows.Forms.OpenFileDialog();
+            this.BLTAyuda = new DevComponents.DotNetBar.BalloonTip();
             this.GPPanelProducto.SuspendLayout();
             this.GPBebida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DINVolumen)).BeginInit();
@@ -96,7 +97,7 @@
             this.GPPanelProducto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GPPanelProducto.Location = new System.Drawing.Point(0, 0);
             this.GPPanelProducto.Name = "GPPanelProducto";
-            this.GPPanelProducto.Size = new System.Drawing.Size(331, 687);
+            this.GPPanelProducto.Size = new System.Drawing.Size(642, 426);
             // 
             // 
             // 
@@ -140,7 +141,7 @@
             this.GPBebida.Controls.Add(this.DINVolumen);
             this.GPBebida.Controls.Add(this.labelX5);
             this.GPBebida.DisabledBackColor = System.Drawing.Color.Empty;
-            this.GPBebida.Location = new System.Drawing.Point(9, 264);
+            this.GPBebida.Location = new System.Drawing.Point(321, 3);
             this.GPBebida.Name = "GPBebida";
             this.GPBebida.Size = new System.Drawing.Size(306, 142);
             // 
@@ -181,6 +182,8 @@
             // 
             // 
             this.LBLCodigoBarras.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.LBLCodigoBarras, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.LBLCodigoBarras, "Código de Barras de Producto");
             this.LBLCodigoBarras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLCodigoBarras.ForeColor = System.Drawing.Color.White;
             this.LBLCodigoBarras.Location = new System.Drawing.Point(6, 3);
@@ -193,6 +196,8 @@
             // BTNCodigoBarras
             // 
             this.BTNCodigoBarras.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BLTAyuda.SetBalloonCaption(this.BTNCodigoBarras, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.BTNCodigoBarras, "Botón de Activar Lector");
             this.BTNCodigoBarras.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNCodigoBarras.Image = global::RestoBar2026.Properties.Resources.icQR;
             this.BTNCodigoBarras.ImageFixedSize = new System.Drawing.Size(20, 20);
@@ -207,6 +212,8 @@
             // 
             // CMBUnidadMedida
             // 
+            this.BLTAyuda.SetBalloonCaption(this.CMBUnidadMedida, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.CMBUnidadMedida, "Unidad de Medida de Producto");
             this.CMBUnidadMedida.DisplayMember = "Text";
             this.CMBUnidadMedida.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMBUnidadMedida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -233,6 +240,8 @@
             // 
             // CMBMarca
             // 
+            this.BLTAyuda.SetBalloonCaption(this.CMBMarca, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.CMBMarca, "Marca del Producto");
             this.CMBMarca.DisplayMember = "Text";
             this.CMBMarca.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMBMarca.ForeColor = System.Drawing.Color.Black;
@@ -244,6 +253,7 @@
             this.CMBMarca.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.CMBMarca.TabIndex = 2;
             this.CMBMarca.WatermarkText = "Marca";
+            this.CMBMarca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CMBNombreProducto_KeyDown);
             this.CMBMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBNombreProducto_KeyPress);
             // 
             // DINVolumen
@@ -253,6 +263,8 @@
             // 
             this.DINVolumen.BackgroundStyle.Class = "DateTimeInputBackground";
             this.DINVolumen.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.DINVolumen, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.DINVolumen, "Volumen de Producto");
             this.DINVolumen.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.DINVolumen.Increment = 1D;
             this.DINVolumen.InputMouseWheelEnabled = false;
@@ -289,9 +301,9 @@
             this.GPInventario.Controls.Add(this.labelX2);
             this.GPInventario.Controls.Add(this.labelX3);
             this.GPInventario.DisabledBackColor = System.Drawing.Color.Empty;
-            this.GPInventario.Location = new System.Drawing.Point(10, 412);
+            this.GPInventario.Location = new System.Drawing.Point(321, 151);
             this.GPInventario.Name = "GPInventario";
-            this.GPInventario.Size = new System.Drawing.Size(305, 119);
+            this.GPInventario.Size = new System.Drawing.Size(305, 118);
             // 
             // 
             // 
@@ -330,6 +342,8 @@
             // 
             this.DINPrecioVenta.BackgroundStyle.Class = "DateTimeInputBackground";
             this.DINPrecioVenta.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.DINPrecioVenta, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.DINPrecioVenta, "Precio del Producto");
             this.DINPrecioVenta.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.DINPrecioVenta.Increment = 1D;
             this.DINPrecioVenta.InputMouseWheelEnabled = false;
@@ -346,6 +360,8 @@
             // 
             this.INTStock.BackgroundStyle.Class = "DateTimeInputBackground";
             this.INTStock.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.INTStock, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.INTStock, "Visualización de Stock de Producto");
             this.INTStock.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.INTStock.Increment = 0;
             this.INTStock.IsInputReadOnly = true;
@@ -377,6 +393,8 @@
             // 
             this.DINPrecioMinimo.BackgroundStyle.Class = "DateTimeInputBackground";
             this.DINPrecioMinimo.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.DINPrecioMinimo, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.DINPrecioMinimo, "Precio Mínimo de Precio");
             this.DINPrecioMinimo.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.DINPrecioMinimo.Increment = 1D;
             this.DINPrecioMinimo.InputMouseWheelEnabled = false;
@@ -422,6 +440,8 @@
             // 
             // 
             this.SWBTipo.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.SWBTipo, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.SWBTipo, "Tipo de Producto");
             this.SWBTipo.Location = new System.Drawing.Point(164, 2);
             this.SWBTipo.Name = "SWBTipo";
             this.SWBTipo.OffBackColor = System.Drawing.Color.Yellow;
@@ -442,6 +462,8 @@
             // 
             // CMBNombreProducto
             // 
+            this.BLTAyuda.SetBalloonCaption(this.CMBNombreProducto, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.CMBNombreProducto, "Nombre del Producto");
             this.CMBNombreProducto.DisplayMember = "Text";
             this.CMBNombreProducto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMBNombreProducto.ForeColor = System.Drawing.Color.Black;
@@ -454,10 +476,13 @@
             this.CMBNombreProducto.TabIndex = 2;
             this.CMBNombreProducto.WatermarkText = "Nombre del Producto";
             this.CMBNombreProducto.Enter += new System.EventHandler(this.CMBCategoria_Enter);
+            this.CMBNombreProducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CMBNombreProducto_KeyDown);
             this.CMBNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBNombreProducto_KeyPress);
             // 
             // CMBCategoria
             // 
+            this.BLTAyuda.SetBalloonCaption(this.CMBCategoria, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.CMBCategoria, "Categoría del Producto");
             this.CMBCategoria.DisplayMember = "Text";
             this.CMBCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMBCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -489,6 +514,8 @@
             // TXTDescripcion
             // 
             this.TXTDescripcion.BackColor = System.Drawing.Color.White;
+            this.BLTAyuda.SetBalloonCaption(this.TXTDescripcion, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.TXTDescripcion, "Descripción de Producto");
             // 
             // 
             // 
@@ -497,14 +524,16 @@
             this.TXTDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TXTDescripcion.DisabledBackColor = System.Drawing.Color.White;
             this.TXTDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.TXTDescripcion.Location = new System.Drawing.Point(10, 537);
+            this.TXTDescripcion.Location = new System.Drawing.Point(10, 275);
             this.TXTDescripcion.Multiline = true;
             this.TXTDescripcion.Name = "TXTDescripcion";
             this.TXTDescripcion.PreventEnterBeep = true;
-            this.TXTDescripcion.Size = new System.Drawing.Size(305, 71);
+            this.TXTDescripcion.Size = new System.Drawing.Size(617, 71);
             this.TXTDescripcion.TabIndex = 8;
             this.TXTDescripcion.WatermarkText = "Descripción";
             this.TXTDescripcion.Enter += new System.EventHandler(this.TXTDescripcion_Enter);
+            this.TXTDescripcion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CMBNombreProducto_KeyDown);
+            this.TXTDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBNombreProducto_KeyPress);
             // 
             // GPFotografia
             // 
@@ -521,7 +550,7 @@
             this.GPFotografia.DisabledBackColor = System.Drawing.Color.Empty;
             this.GPFotografia.Location = new System.Drawing.Point(9, 87);
             this.GPFotografia.Name = "GPFotografia";
-            this.GPFotografia.Size = new System.Drawing.Size(306, 171);
+            this.GPFotografia.Size = new System.Drawing.Size(306, 182);
             // 
             // 
             // 
@@ -559,6 +588,8 @@
             // 
             // 
             this.SWBCamara.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.SWBCamara, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.SWBCamara, "Activación de la Cámara");
             this.SWBCamara.Location = new System.Drawing.Point(89, 3);
             this.SWBCamara.Name = "SWBCamara";
             this.SWBCamara.OffBackColor = System.Drawing.Color.OrangeRed;
@@ -594,6 +625,8 @@
             // BTNAbrirFoto
             // 
             this.BTNAbrirFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BLTAyuda.SetBalloonCaption(this.BTNAbrirFoto, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.BTNAbrirFoto, "Botón de Buscar Foto");
             this.BTNAbrirFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNAbrirFoto.Image = global::RestoBar2026.Properties.Resources.icGaleria;
             this.BTNAbrirFoto.ImageFixedSize = new System.Drawing.Size(30, 30);
@@ -608,6 +641,8 @@
             // BTNLimpiarFoto
             // 
             this.BTNLimpiarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BLTAyuda.SetBalloonCaption(this.BTNLimpiarFoto, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.BTNLimpiarFoto, "Botón de Limpiar Foto");
             this.BTNLimpiarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNLimpiarFoto.Image = global::RestoBar2026.Properties.Resources.icRemoverImagen;
             this.BTNLimpiarFoto.ImageFixedSize = new System.Drawing.Size(30, 30);
@@ -622,6 +657,8 @@
             // BTNCapturarFoto
             // 
             this.BTNCapturarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BLTAyuda.SetBalloonCaption(this.BTNCapturarFoto, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.BTNCapturarFoto, "Botón de Capturar Foto");
             this.BTNCapturarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNCapturarFoto.Image = global::RestoBar2026.Properties.Resources.icCamara;
             this.BTNCapturarFoto.ImageFixedSize = new System.Drawing.Size(30, 30);
@@ -636,6 +673,8 @@
             // PCBFotografía
             // 
             this.PCBFotografía.BackColor = System.Drawing.Color.Gainsboro;
+            this.BLTAyuda.SetBalloonCaption(this.PCBFotografía, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.PCBFotografía, "Visualización de Imagen");
             this.PCBFotografía.Image = global::RestoBar2026.Properties.Resources.icFlashDesactivado;
             this.PCBFotografía.Location = new System.Drawing.Point(152, 23);
             this.PCBFotografía.Name = "PCBFotografía";
@@ -647,6 +686,8 @@
             // PCBCamara
             // 
             this.PCBCamara.BackColor = System.Drawing.Color.Gainsboro;
+            this.BLTAyuda.SetBalloonCaption(this.PCBCamara, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.PCBCamara, "Visualización de la Cámara");
             this.PCBCamara.Image = global::RestoBar2026.Properties.Resources.icFlashDesactivado;
             this.PCBCamara.Location = new System.Drawing.Point(6, 23);
             this.PCBCamara.Name = "PCBCamara";
@@ -662,7 +703,7 @@
             this.BTNSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTNSalir.Image = global::RestoBar2026.Properties.Resources.icCancelarRedondo;
             this.BTNSalir.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTNSalir.Location = new System.Drawing.Point(215, 614);
+            this.BTNSalir.Location = new System.Drawing.Point(527, 352);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(100, 44);
             this.BTNSalir.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -676,7 +717,7 @@
             this.BTNLimpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNLimpiar.Image = global::RestoBar2026.Properties.Resources.icLimpiar;
             this.BTNLimpiar.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTNLimpiar.Location = new System.Drawing.Point(116, 614);
+            this.BTNLimpiar.Location = new System.Drawing.Point(277, 352);
             this.BTNLimpiar.Name = "BTNLimpiar";
             this.BTNLimpiar.Size = new System.Drawing.Size(93, 44);
             this.BTNLimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -690,7 +731,7 @@
             this.BTNGrabar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNGrabar.Image = global::RestoBar2026.Properties.Resources.icGuardar;
             this.BTNGrabar.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTNGrabar.Location = new System.Drawing.Point(10, 614);
+            this.BTNGrabar.Location = new System.Drawing.Point(8, 352);
             this.BTNGrabar.Name = "BTNGrabar";
             this.BTNGrabar.Size = new System.Drawing.Size(100, 44);
             this.BTNGrabar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -704,6 +745,8 @@
             // 
             // 
             this.SWBEstado.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.BLTAyuda.SetBalloonCaption(this.SWBEstado, "Ayuda");
+            this.BLTAyuda.SetBalloonText(this.SWBEstado, "Estado del Producto");
             this.SWBEstado.Location = new System.Drawing.Point(9, 2);
             this.SWBEstado.Name = "SWBEstado";
             this.SWBEstado.OffBackColor = System.Drawing.Color.OrangeRed;
@@ -730,7 +773,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(331, 687);
+            this.ClientSize = new System.Drawing.Size(642, 426);
             this.Controls.Add(this.GPPanelProducto);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -792,5 +835,6 @@
         private DevComponents.DotNetBar.ButtonX BTNCodigoBarras;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.Controls.SwitchButton SWBCamara;
+        private DevComponents.DotNetBar.BalloonTip BLTAyuda;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace RestoBar2026
 {
-    partial class FRMCategoriaLista
+    partial class FRMEmpleadoLista
     {
         /// <summary>
         /// Required designer variable.
@@ -31,34 +31,65 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DTGLista = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new DevComponents.DotNetBar.Controls.DataGridViewDoubleInputColumn();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
             this.groupPanelBusqueda = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.BTN_Buscar = new DevComponents.DotNetBar.ButtonX();
             this.TXTFiltrar = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.IIN_Filas = new DevComponents.Editors.IntegerInput();
             this.EPN_Opciones = new DevComponents.DotNetBar.ExpandablePanel();
+            this.BTN_Reporte = new DevComponents.DotNetBar.ButtonX();
             this.BTNEliminar = new DevComponents.DotNetBar.ButtonX();
-            this.BTNModificar = new DevComponents.DotNetBar.ButtonX();
-            this.BTNRegistrar = new DevComponents.DotNetBar.ButtonX();
-            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTN_Modificar = new DevComponents.DotNetBar.ButtonX();
+            this.BTN_Registrar = new DevComponents.DotNetBar.ButtonX();
+            this.CMSMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
             this.expandablePanel1.SuspendLayout();
             this.groupPanelBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IIN_Filas)).BeginInit();
             this.EPN_Opciones.SuspendLayout();
-            this.CMSMenu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // CMSMenu
+            // 
+            this.CMSMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarToolStripMenuItem,
+            this.inhabilitarToolStripMenuItem,
+            this.habilitarToolStripMenuItem});
+            this.CMSMenu.Name = "CMSMenu";
+            this.CMSMenu.Size = new System.Drawing.Size(128, 70);
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.modificarToolStripMenuItem.Text = "&Modificar";
+            // 
+            // inhabilitarToolStripMenuItem
+            // 
+            this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
+            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
+            // 
+            // habilitarToolStripMenuItem
+            // 
+            this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
+            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.habilitarToolStripMenuItem.Text = "&Habilitar";
             // 
             // DTGLista
             // 
@@ -85,17 +116,20 @@
             this.DTGLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column11});
+            this.Column3,
+            this.Column11,
+            this.Column4,
+            this.Column9});
             this.DTGLista.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTGLista.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTGLista.DefaultCellStyle = dataGridViewCellStyle5;
             this.DTGLista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DTGLista.EnableHeadersVisualStyles = false;
             this.DTGLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
@@ -104,21 +138,82 @@
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
             this.DTGLista.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTGLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTGLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.RowTemplate.Height = 30;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTGLista.Size = new System.Drawing.Size(879, 355);
-            this.DTGLista.TabIndex = 93;
-            this.DTGLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellDoubleClick);
+            this.DTGLista.Size = new System.Drawing.Size(890, 312);
+            this.DTGLista.TabIndex = 108;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.Checked = true;
+            this.Column2.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.Column2.CheckValue = null;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column2.HeaderText = "Estado";
+            this.Column2.MinimumWidth = 70;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 70;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Tipo Empleado";
+            this.Column3.MinimumWidth = 120;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column11.HeaderText = "Fecha Ingreso";
+            this.Column11.MinimumWidth = 170;
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Fecha Salida";
+            this.Column4.MinimumWidth = 120;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            // 
+            // 
+            // 
+            this.Column9.BackgroundStyle.Class = "DataGridViewNumericBorder";
+            this.Column9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column9.HeaderText = "Salario";
+            this.Column9.Increment = 1D;
+            this.Column9.MinimumWidth = 80;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // expandablePanel1
             // 
@@ -131,13 +226,13 @@
             this.expandablePanel1.Location = new System.Drawing.Point(80, 0);
             this.expandablePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(879, 99);
+            this.expandablePanel1.Size = new System.Drawing.Size(890, 99);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.expandablePanel1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.expandablePanel1.Style.GradientAngle = 90;
-            this.expandablePanel1.TabIndex = 94;
+            this.expandablePanel1.TabIndex = 109;
             this.expandablePanel1.TitleHeight = 32;
             this.expandablePanel1.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
@@ -249,9 +344,10 @@
             this.EPN_Opciones.CanvasColor = System.Drawing.SystemColors.Control;
             this.EPN_Opciones.CollapseDirection = DevComponents.DotNetBar.eCollapseDirection.RightToLeft;
             this.EPN_Opciones.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.EPN_Opciones.Controls.Add(this.BTN_Reporte);
             this.EPN_Opciones.Controls.Add(this.BTNEliminar);
-            this.EPN_Opciones.Controls.Add(this.BTNModificar);
-            this.EPN_Opciones.Controls.Add(this.BTNRegistrar);
+            this.EPN_Opciones.Controls.Add(this.BTN_Modificar);
+            this.EPN_Opciones.Controls.Add(this.BTN_Registrar);
             this.EPN_Opciones.DisabledBackColor = System.Drawing.Color.Empty;
             this.EPN_Opciones.Dock = System.Windows.Forms.DockStyle.Left;
             this.EPN_Opciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,13 +355,13 @@
             this.EPN_Opciones.Location = new System.Drawing.Point(0, 0);
             this.EPN_Opciones.Margin = new System.Windows.Forms.Padding(4);
             this.EPN_Opciones.Name = "EPN_Opciones";
-            this.EPN_Opciones.Size = new System.Drawing.Size(80, 454);
+            this.EPN_Opciones.Size = new System.Drawing.Size(80, 411);
             this.EPN_Opciones.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Opciones.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.EPN_Opciones.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.EPN_Opciones.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.EPN_Opciones.Style.GradientAngle = 90;
-            this.EPN_Opciones.TabIndex = 92;
+            this.EPN_Opciones.TabIndex = 107;
             this.EPN_Opciones.TitleHeight = 32;
             this.EPN_Opciones.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Opciones.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
@@ -275,6 +371,22 @@
             this.EPN_Opciones.TitleStyle.GradientAngle = 90;
             this.EPN_Opciones.TitleStyleMouseDown.BackColor1.Color = System.Drawing.Color.Transparent;
             this.EPN_Opciones.TitleText = "Opciones";
+            // 
+            // BTN_Reporte
+            // 
+            this.BTN_Reporte.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTN_Reporte.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTN_Reporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BTN_Reporte.Image = global::RestoBar2026.Properties.Resources.icCalendario;
+            this.BTN_Reporte.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.BTN_Reporte.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTN_Reporte.Location = new System.Drawing.Point(0, 301);
+            this.BTN_Reporte.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_Reporte.Name = "BTN_Reporte";
+            this.BTN_Reporte.Size = new System.Drawing.Size(80, 89);
+            this.BTN_Reporte.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTN_Reporte.TabIndex = 8;
+            this.BTN_Reporte.Text = "&Reporte";
             // 
             // BTNEliminar
             // 
@@ -289,115 +401,47 @@
             this.BTNEliminar.Name = "BTNEliminar";
             this.BTNEliminar.Size = new System.Drawing.Size(80, 89);
             this.BTNEliminar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNEliminar.TabIndex = 6;
+            this.BTNEliminar.TabIndex = 7;
             this.BTNEliminar.Text = "&Eliminar";
-            this.BTNEliminar.Click += new System.EventHandler(this.BTNEliminar_Click);
             // 
-            // BTNModificar
+            // BTN_Modificar
             // 
-            this.BTNModificar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNModificar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BTNModificar.Image = global::RestoBar2026.Properties.Resources.icEditar;
-            this.BTNModificar.ImageFixedSize = new System.Drawing.Size(60, 60);
-            this.BTNModificar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNModificar.Location = new System.Drawing.Point(0, 122);
-            this.BTNModificar.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNModificar.Name = "BTNModificar";
-            this.BTNModificar.Size = new System.Drawing.Size(80, 90);
-            this.BTNModificar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNModificar.TabIndex = 5;
-            this.BTNModificar.Text = "Modificar ";
-            this.BTNModificar.Click += new System.EventHandler(this.BTN_Modificar_Click);
+            this.BTN_Modificar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTN_Modificar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTN_Modificar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BTN_Modificar.Image = global::RestoBar2026.Properties.Resources.icEditar;
+            this.BTN_Modificar.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.BTN_Modificar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTN_Modificar.Location = new System.Drawing.Point(0, 122);
+            this.BTN_Modificar.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_Modificar.Name = "BTN_Modificar";
+            this.BTN_Modificar.Size = new System.Drawing.Size(80, 90);
+            this.BTN_Modificar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTN_Modificar.TabIndex = 5;
+            this.BTN_Modificar.Text = "&Modificar ";
             // 
-            // BTNRegistrar
+            // BTN_Registrar
             // 
-            this.BTNRegistrar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNRegistrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNRegistrar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BTNRegistrar.Image = global::RestoBar2026.Properties.Resources.icAgregar;
-            this.BTNRegistrar.ImageFixedSize = new System.Drawing.Size(60, 60);
-            this.BTNRegistrar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNRegistrar.Location = new System.Drawing.Point(0, 32);
-            this.BTNRegistrar.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNRegistrar.Name = "BTNRegistrar";
-            this.BTNRegistrar.Size = new System.Drawing.Size(80, 90);
-            this.BTNRegistrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNRegistrar.TabIndex = 4;
-            this.BTNRegistrar.Text = "Registrar ";
-            this.BTNRegistrar.Click += new System.EventHandler(this.BTN_Registrar_Click);
+            this.BTN_Registrar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTN_Registrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTN_Registrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BTN_Registrar.Image = global::RestoBar2026.Properties.Resources.icAgregar;
+            this.BTN_Registrar.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.BTN_Registrar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTN_Registrar.Location = new System.Drawing.Point(0, 32);
+            this.BTN_Registrar.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_Registrar.Name = "BTN_Registrar";
+            this.BTN_Registrar.Size = new System.Drawing.Size(80, 90);
+            this.BTN_Registrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTN_Registrar.TabIndex = 4;
+            this.BTN_Registrar.Text = "&Registrar ";
+            this.BTN_Registrar.Click += new System.EventHandler(this.BTN_Registrar_Click);
             // 
-            // CMSMenu
-            // 
-            this.CMSMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modificarToolStripMenuItem,
-            this.inhabilitarToolStripMenuItem,
-            this.habilitarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
-            this.CMSMenu.Name = "CMSMenu";
-            this.CMSMenu.Size = new System.Drawing.Size(128, 92);
-            // 
-            // modificarToolStripMenuItem
-            // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.modificarToolStripMenuItem.Text = "&Modificar";
-            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
-            // 
-            // inhabilitarToolStripMenuItem
-            // 
-            this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
-            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
-            this.inhabilitarToolStripMenuItem.Click += new System.EventHandler(this.inhabilitarToolStripMenuItem_Click);
-            // 
-            // habilitarToolStripMenuItem
-            // 
-            this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
-            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.habilitarToolStripMenuItem.Text = "&Habilitar";
-            this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.eliminarToolStripMenuItem.Text = "&Eliminar";
-            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
-            // 
-            // Column11
-            // 
-            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column11.HeaderText = "Nombre de Categoría";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.Checked = true;
-            this.Column2.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.Column2.CheckValue = null;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column2.HeaderText = "Estado";
-            this.Column2.MinimumWidth = 70;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 70;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
-            // 
-            // FRMCategoriaLista
+            // FRMEmpleadoLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 454);
+            this.ClientSize = new System.Drawing.Size(970, 411);
             this.Controls.Add(this.DTGLista);
             this.Controls.Add(this.expandablePanel1);
             this.Controls.Add(this.EPN_Opciones);
@@ -405,21 +449,23 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FRMCategoriaLista";
-            this.Text = "FRMCategoriaLista";
-            this.Load += new System.EventHandler(this.FRMCategoriaLista_Load);
+            this.Name = "FRMEmpleadoLista";
+            this.Text = "FRMEmpleadoLista";
+            this.CMSMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).EndInit();
             this.expandablePanel1.ResumeLayout(false);
             this.groupPanelBusqueda.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.IIN_Filas)).EndInit();
             this.EPN_Opciones.ResumeLayout(false);
-            this.CMSMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.ContextMenuStrip CMSMenu;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inhabilitarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
         private DevComponents.DotNetBar.Controls.DataGridViewX DTGLista;
         private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanelBusqueda;
@@ -427,16 +473,15 @@
         private DevComponents.DotNetBar.Controls.TextBoxX TXTFiltrar;
         private DevComponents.Editors.IntegerInput IIN_Filas;
         private DevComponents.DotNetBar.ExpandablePanel EPN_Opciones;
+        private DevComponents.DotNetBar.ButtonX BTN_Reporte;
         private DevComponents.DotNetBar.ButtonX BTNEliminar;
-        private DevComponents.DotNetBar.ButtonX BTNModificar;
-        private DevComponents.DotNetBar.ButtonX BTNRegistrar;
-        private System.Windows.Forms.ContextMenuStrip CMSMenu;
-        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inhabilitarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private DevComponents.DotNetBar.ButtonX BTN_Modificar;
+        private DevComponents.DotNetBar.ButtonX BTN_Registrar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private DevComponents.DotNetBar.Controls.DataGridViewDoubleInputColumn Column9;
     }
 }

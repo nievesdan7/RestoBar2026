@@ -63,6 +63,16 @@ namespace RestoBar2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icAceptar {
+            get {
+                object obj = ResourceManager.GetObject("icAceptar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icAgregar {
             get {
                 object obj = ResourceManager.GetObject("icAgregar", resourceCulture);
@@ -163,6 +173,16 @@ namespace RestoBar2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icEmpleado {
+            get {
+                object obj = ResourceManager.GetObject("icEmpleado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icFlashDesactivado {
             get {
                 object obj = ResourceManager.GetObject("icFlashDesactivado", resourceCulture);
@@ -213,9 +233,39 @@ namespace RestoBar2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icPersona {
+            get {
+                object obj = ResourceManager.GetObject("icPersona", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icPlato {
             get {
                 object obj = ResourceManager.GetObject("icPlato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icProducto {
+            get {
+                object obj = ResourceManager.GetObject("icProducto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icProveedor {
+            get {
+                object obj = ResourceManager.GetObject("icProveedor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

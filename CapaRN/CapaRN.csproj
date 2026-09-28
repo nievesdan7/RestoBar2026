@@ -92,8 +92,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="acatpro.cs" />
+    <Compile Include="aemplea.cs" />
+    <Compile Include="aperson.cs" />
     <Compile Include="AppConfWriter.cs" />
     <Compile Include="aproduc.cs" />
+    <Compile Include="aprovee.cs" />
+    <Compile Include="lemplea.cs" />
     <Compile Include="lproduc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="xgeneral.cs" />

@@ -41,18 +41,13 @@ namespace RestoBar2026
             {
                 DTGLista.Rows.Add();
 
-                if (a.cacpestcat)
+                if (!a.cacpestcat)
                 {
-                    if (DTGLista.Rows.Count % 2 == 0)
-                    {
-                        DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.Gainsboro;
-                    }
-                }
-                else
-                {
-                    DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.Tomato;
+                    DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.OrangeRed;
                     DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.ForeColor = Color.White;
                 }
+                
+                
                 DTGLista[0, DTGLista.Rows.Count - 1].Value = a.pacpcodcat;
                 DTGLista[1, DTGLista.Rows.Count - 1].Value = a.cacpestcat;
                 DTGLista[2, DTGLista.Rows.Count - 1].Value = a.cacpnomcat;
@@ -85,6 +80,7 @@ namespace RestoBar2026
         }
         private void FRMCategoriaLista_Load(object sender, EventArgs e)
         {
+            
             ActualizarGrid();
         }
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)

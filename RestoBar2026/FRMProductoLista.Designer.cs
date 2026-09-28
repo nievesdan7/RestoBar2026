@@ -29,26 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
             this.groupPanelBusqueda = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.BTN_Buscar = new DevComponents.DotNetBar.ButtonX();
             this.TXTFiltrar = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.IIN_Filas = new DevComponents.Editors.IntegerInput();
             this.DTGLista = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.EPN_Opciones = new DevComponents.DotNetBar.ExpandablePanel();
-            this.BTN_Modificar = new DevComponents.DotNetBar.ButtonX();
-            this.BTN_Registrar = new DevComponents.DotNetBar.ButtonX();
-            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,8 +55,15 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTNEliminar = new DevComponents.DotNetBar.ButtonX();
+            this.EPN_Opciones = new DevComponents.DotNetBar.ExpandablePanel();
             this.BTN_Reporte = new DevComponents.DotNetBar.ButtonX();
+            this.BTNEliminar = new DevComponents.DotNetBar.ButtonX();
+            this.BTN_Modificar = new DevComponents.DotNetBar.ButtonX();
+            this.BTN_Registrar = new DevComponents.DotNetBar.ButtonX();
+            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expandablePanel1.SuspendLayout();
             this.groupPanelBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IIN_Filas)).BeginInit();
@@ -201,18 +202,20 @@
             this.DTGLista.AllowUserToDeleteRows = false;
             this.DTGLista.AllowUserToResizeColumns = false;
             this.DTGLista.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.OldLace;
+            this.DTGLista.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DTGLista.BackgroundColor = System.Drawing.Color.White;
             this.DTGLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTGLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTGLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTGLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DTGLista.ColumnHeadersHeight = 30;
             this.DTGLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTGLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -229,38 +232,162 @@
             this.Column7,
             this.Column12});
             this.DTGLista.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTGLista.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTGLista.DefaultCellStyle = dataGridViewCellStyle7;
             this.DTGLista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DTGLista.EnableHeadersVisualStyles = false;
-            this.DTGLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.DTGLista.GridColor = System.Drawing.SystemColors.Control;
             this.DTGLista.Location = new System.Drawing.Point(80, 99);
             this.DTGLista.Margin = new System.Windows.Forms.Padding(4);
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
             this.DTGLista.ReadOnly = true;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTGLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTGLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.RowTemplate.Height = 30;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTGLista.Size = new System.Drawing.Size(1172, 321);
             this.DTGLista.TabIndex = 84;
             this.DTGLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellDoubleClick);
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.Checked = true;
+            this.Column2.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.Column2.CheckValue = null;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column2.HeaderText = "Estado";
+            this.Column2.MinimumWidth = 70;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 70;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column3.HeaderText = "Cod. Bar.";
+            this.Column3.MinimumWidth = 120;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 120;
+            // 
+            // Column11
+            // 
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column11.HeaderText = "Nombre";
+            this.Column11.MinimumWidth = 170;
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 170;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column4.HeaderText = "Categoría";
+            this.Column4.MinimumWidth = 120;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 120;
+            // 
+            // Column5
+            // 
+            this.Column5.Checked = true;
+            this.Column5.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.Column5.CheckValue = "N";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column5.HeaderText = "Con. Inv.";
+            this.Column5.MinimumWidth = 70;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column5.Width = 70;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            // 
+            // 
+            // 
+            this.Column8.BackgroundStyle.Class = "DataGridViewNumericBorder";
+            this.Column8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column8.HeaderText = "Stock";
+            this.Column8.MinimumWidth = 80;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 80;
+            // 
+            // Column9
+            // 
+            // 
+            // 
+            // 
+            this.Column9.BackgroundStyle.Class = "DataGridViewNumericBorder";
+            this.Column9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column9.HeaderText = "Precio";
+            this.Column9.Increment = 1D;
+            this.Column9.MinimumWidth = 80;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 80;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column6.HeaderText = "Marca";
+            this.Column6.MinimumWidth = 100;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Volumen";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Uni. Med.";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column12.HeaderText = "Descripción";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
             // 
             // EPN_Opciones
             // 
@@ -294,6 +421,39 @@
             this.EPN_Opciones.TitleStyle.GradientAngle = 90;
             this.EPN_Opciones.TitleStyleMouseDown.BackColor1.Color = System.Drawing.Color.Transparent;
             this.EPN_Opciones.TitleText = "Opciones";
+            // 
+            // BTN_Reporte
+            // 
+            this.BTN_Reporte.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTN_Reporte.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTN_Reporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BTN_Reporte.Image = global::RestoBar2026.Properties.Resources.icCalendario;
+            this.BTN_Reporte.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.BTN_Reporte.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTN_Reporte.Location = new System.Drawing.Point(0, 301);
+            this.BTN_Reporte.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_Reporte.Name = "BTN_Reporte";
+            this.BTN_Reporte.Size = new System.Drawing.Size(80, 89);
+            this.BTN_Reporte.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTN_Reporte.TabIndex = 8;
+            this.BTN_Reporte.Text = "&Reporte";
+            // 
+            // BTNEliminar
+            // 
+            this.BTNEliminar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNEliminar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNEliminar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BTNEliminar.Image = global::RestoBar2026.Properties.Resources.icBasurero;
+            this.BTNEliminar.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.BTNEliminar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTNEliminar.Location = new System.Drawing.Point(0, 212);
+            this.BTNEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNEliminar.Name = "BTNEliminar";
+            this.BTNEliminar.Size = new System.Drawing.Size(80, 89);
+            this.BTNEliminar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNEliminar.TabIndex = 7;
+            this.BTNEliminar.Text = "&Eliminar";
+            this.BTNEliminar.Click += new System.EventHandler(this.BTNEliminar_Click);
             // 
             // BTN_Modificar
             // 
@@ -358,163 +518,6 @@
             this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.habilitarToolStripMenuItem.Text = "&Habilitar";
             this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.Checked = true;
-            this.Column2.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.Column2.CheckValue = null;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle14;
-            this.Column2.HeaderText = "Estado";
-            this.Column2.MinimumWidth = 70;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 70;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column3.HeaderText = "Cod. Bar.";
-            this.Column3.MinimumWidth = 120;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 120;
-            // 
-            // Column11
-            // 
-            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column11.HeaderText = "Nombre";
-            this.Column11.MinimumWidth = 170;
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Width = 170;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column4.HeaderText = "Categoría";
-            this.Column4.MinimumWidth = 120;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 120;
-            // 
-            // Column5
-            // 
-            this.Column5.Checked = true;
-            this.Column5.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.Column5.CheckValue = "N";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle15;
-            this.Column5.HeaderText = "Con. Inv.";
-            this.Column5.MinimumWidth = 70;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column5.Width = 70;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            // 
-            // 
-            // 
-            this.Column8.BackgroundStyle.Class = "DataGridViewNumericBorder";
-            this.Column8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            dataGridViewCellStyle16.Format = "N2";
-            dataGridViewCellStyle16.NullValue = null;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle16;
-            this.Column8.HeaderText = "Stock";
-            this.Column8.MinimumWidth = 80;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 80;
-            // 
-            // Column9
-            // 
-            // 
-            // 
-            // 
-            this.Column9.BackgroundStyle.Class = "DataGridViewNumericBorder";
-            this.Column9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            dataGridViewCellStyle11.Format = "N2";
-            dataGridViewCellStyle11.NullValue = null;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Column9.HeaderText = "Precio";
-            this.Column9.Increment = 1D;
-            this.Column9.MinimumWidth = 80;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 80;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column6.HeaderText = "Marca";
-            this.Column6.MinimumWidth = 100;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Volumen";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Uni. Med.";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column12
-            // 
-            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column12.HeaderText = "Descripción";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            // 
-            // BTNEliminar
-            // 
-            this.BTNEliminar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNEliminar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNEliminar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BTNEliminar.Image = global::RestoBar2026.Properties.Resources.icBasurero;
-            this.BTNEliminar.ImageFixedSize = new System.Drawing.Size(60, 60);
-            this.BTNEliminar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNEliminar.Location = new System.Drawing.Point(0, 212);
-            this.BTNEliminar.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNEliminar.Name = "BTNEliminar";
-            this.BTNEliminar.Size = new System.Drawing.Size(80, 89);
-            this.BTNEliminar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNEliminar.TabIndex = 7;
-            this.BTNEliminar.Text = "&Eliminar";
-            this.BTNEliminar.Click += new System.EventHandler(this.BTNEliminar_Click);
-            // 
-            // BTN_Reporte
-            // 
-            this.BTN_Reporte.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTN_Reporte.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTN_Reporte.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BTN_Reporte.Image = global::RestoBar2026.Properties.Resources.icCalendario;
-            this.BTN_Reporte.ImageFixedSize = new System.Drawing.Size(60, 60);
-            this.BTN_Reporte.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTN_Reporte.Location = new System.Drawing.Point(0, 301);
-            this.BTN_Reporte.Margin = new System.Windows.Forms.Padding(4);
-            this.BTN_Reporte.Name = "BTN_Reporte";
-            this.BTN_Reporte.Size = new System.Drawing.Size(80, 89);
-            this.BTN_Reporte.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTN_Reporte.TabIndex = 8;
-            this.BTN_Reporte.Text = "&Reporte";
             // 
             // FRMProductoLista
             // 

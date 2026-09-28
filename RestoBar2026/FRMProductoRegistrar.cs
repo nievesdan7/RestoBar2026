@@ -257,6 +257,22 @@ namespace RestoBar2026
 
             }
         }
+        private void FRMProductoRegistrar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro que desea cerrar el formulario?",
+                                "Pregunta",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question,
+                                MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                ApagarCamara();
+            }
+        }
+
         private void SWBTipo_ValueChanged(object sender, EventArgs e)
         {
             if (SWBTipo.Value == true)
@@ -268,6 +284,62 @@ namespace RestoBar2026
                 GPBebida.Enabled = false;
             }
         }
+        private void BTNCodigoBarras_Click(object sender, EventArgs e)
+        {
+            if (!lectorHabilitado)
+            {
+                lectorHabilitado = true;
+                LBLCodigoBarras.Text = "LECTOR ACTIVO";
+                LBLCodigoBarras.BackColor = Color.Blue;
+            }
+            else
+            {
+                if (LBLCodigoBarras.Text == "LECTOR ACTIVO")
+                {
+                    LBLCodigoBarras.Text = "S/C";
+                    LBLCodigoBarras.BackColor = Color.OrangeRed;
+                }
+                else
+                {
+                    LBLCodigoBarras.BackColor = Color.Blue;
+                }
+                lectorHabilitado = false;
+                CMBMarca.Focus();
+            }
+        }
+        private void BTNCodigoBarras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (LBLCodigoBarras.Text == "LECTOR ACTIVO")
+            {
+                LBLCodigoBarras.Text = "" + e.KeyChar;
+            }
+            else
+            {
+                LBLCodigoBarras.Text += e.KeyChar;
+            }
+
+        }
+        private void CMBCategoria_Enter(object sender, EventArgs e)
+        {
+            ComboBoxEx a = (ComboBoxEx)sender;
+            a.SelectAll();
+        }
+        private void CMBNombreProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Char.ToUpper(e.KeyChar);
+        }
+        private void TXTDescripcion_Enter(object sender, EventArgs e)
+        {
+            TextBox a = (TextBox)sender;
+            a.SelectAll();
+        }
+        private void BTN_AgregarCategoria_Click(object sender, EventArgs e)
+        {
+            FRMCategoriaRegistrar a = new FRMCategoriaRegistrar();
+            a.ShowDialog();
+            CargarComboCategorias();
+        }
+
         private void BTN_Limpiar_Click(object sender, EventArgs e)
         {
             LimpiarCasillas();
@@ -372,7 +444,7 @@ namespace RestoBar2026
                 {
                     if (producto.Modificar())
                     {
-                        MessageBox.Show("Éxito en la modificicación de "+nombreMay,
+                        MessageBox.Show("Éxito en la modificación de "+nombreMay,
                                         "Mensaje",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Information);
@@ -384,7 +456,7 @@ namespace RestoBar2026
                     }
                     else
                     {
-                        MessageBox.Show("Error en la modificicación de " + nombreMay,
+                        MessageBox.Show("Error en la modificación de " + nombreMay,
                                             "Error",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Warning);
@@ -392,69 +464,28 @@ namespace RestoBar2026
                 }
             }
         }
-        private void BTNCodigoBarras_Click(object sender, EventArgs e)
-        {
-            if (!lectorHabilitado)
-            {
-                lectorHabilitado = true;
-                LBLCodigoBarras.Text = "LECTOR ACTIVO";
-                LBLCodigoBarras.BackColor = Color.Blue;
-            }
-            else
-            {
-                if (LBLCodigoBarras.Text == "LECTOR ACTIVO")
-                {
-                    LBLCodigoBarras.Text = "S/C";
-                    LBLCodigoBarras.BackColor = Color.OrangeRed;
-                }
-                else
-                {
-                    LBLCodigoBarras.BackColor = Color.Blue;
-                }
-                lectorHabilitado = false;
-                CMBMarca.Focus();
-            }
-        }
-        private void BTNCodigoBarras_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (LBLCodigoBarras.Text == "LECTOR ACTIVO")
-            {
-                LBLCodigoBarras.Text = "" + e.KeyChar;
-            }
-            else
-            {
-                LBLCodigoBarras.Text += e.KeyChar;
-            }
 
-        }
-        private void FRMProductoRegistrar_FormClosing(object sender, FormClosingEventArgs e)
+        private void CMBNombreProducto_KeyDown(object sender, KeyEventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea cerrar el formulario?",
-                                "Pregunta",
-                                MessageBoxButtons.YesNo,
-                                MessageBoxIcon.Question,
-                                MessageBoxDefaultButton.Button2) == DialogResult.No)
+            bool teclaValida = false;
+
+            // 1. Letras de la A a la Z (sin Alt)
+            if ((e.KeyCode >= Keys.A) && (e.KeyCode <= Keys.Z) && (!e.Alt))
+                teclaValida = true;
+            // 2. Espacio en blanco (sin Shift)
+            else if (e.KeyCode == Keys.Space && !e.Shift)
+                teclaValida = true;
+            // 3. Teclas de control y navegación (Borrar, Suprimir, Flecha Izquierda, Flecha Derecha)
+            else if ((e.KeyCode == Keys.Back) ||
+                     (e.KeyCode == Keys.Delete) ||
+                     (e.KeyCode == Keys.Left) ||
+                     (e.KeyCode == Keys.Right))
+                teclaValida = true;
+
+            if (!teclaValida)
             {
-                e.Cancel = true;
+                e.SuppressKeyPress = true;
             }
-            else
-            {
-                ApagarCamara();
-            }
-        }
-        private void CMBCategoria_Enter(object sender, EventArgs e)
-        {
-            ComboBoxEx a = (ComboBoxEx)sender;
-            a.SelectAll();
-        }
-        private void CMBNombreProducto_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.KeyChar = Char.ToUpper(e.KeyChar);
-        }
-        private void TXTDescripcion_Enter(object sender, EventArgs e)
-        {
-            TextBox a = (TextBox)sender;
-            a.SelectAll();
         }
         #endregion
 
@@ -538,14 +569,10 @@ namespace RestoBar2026
 
 
 
-        #endregion
 
-        private void BTN_AgregarCategoria_Click(object sender, EventArgs e)
-        {
-            FRMCategoriaRegistrar a = new FRMCategoriaRegistrar();
-            a.ShowDialog();
-            CargarComboCategorias();
-        }
+
+
+        #endregion
 
         
     }

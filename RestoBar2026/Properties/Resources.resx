@@ -121,14 +121,20 @@
   <data name="icBuscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icBuscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icCancelarRedondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icCancelarRedondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icEmpleado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icEmpleado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icCategorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icCategorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icQR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icQR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icBasurero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icBasurero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icBebida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icBebida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icAceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icAceptar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icAgregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icAgregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -138,6 +144,9 @@
   </data>
   <data name="icLimpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icLimpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icGaleria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icGaleria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icFlashDesactivado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icFlashDesactivado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,22 +163,28 @@
   <data name="icCancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icCancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icQR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icQR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icCancelarRedondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icCancelarRedondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icCalendario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icCalendario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icProveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icProveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icCamara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icCamara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icPersona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icPersona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icGuardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icGuardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icGaleria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icGaleria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icCategorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icCategorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icBasurero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icBasurero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icProducto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icProducto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
